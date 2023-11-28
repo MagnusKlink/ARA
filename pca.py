@@ -1,9 +1,12 @@
+# pca9685.py
+# Kevin McAleer
+# March 2021
 import ustruct
 import time
 
 
 class PCA9685:
-    def __init__(self, i2c, address=0x40):
+    def __init__(self, i2c, address):
         self.i2c = i2c
         self.address = address
         self.reset()

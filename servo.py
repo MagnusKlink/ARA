@@ -1,20 +1,18 @@
 # servo.py
 # Kevin McAleer
 # March 2021
-
-from pca import PCA9685
 import math
 
 
 class Servos:
-    def __init__(self, i2c, address=0x40, freq=50, min_us=600, max_us=2400,
+    def __init__(self, pca9685, freq=50, min_us=600, max_us=2400,
                  degrees=180):
         self.period = 1000000 / freq
         self.min_duty = self._us2duty(min_us)
         self.max_duty = self._us2duty(max_us)
         self.degrees = degrees
         self.freq = freq
-        self.pca9685 = PCA9685(i2c, address)
+        self.pca9685 = pca9685
         self.pca9685.freq(freq)
 
     def _us2duty(self, value):
