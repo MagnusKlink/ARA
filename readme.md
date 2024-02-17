@@ -24,6 +24,8 @@ For example:
 - Built in wireless charger for phone (When not walking about, it's essentially a big powerbank - useful for something like [BornHack!](https://bornhack.dk/))
 - And much, much more!
 
+![Six-legged black robot on blue carpet, with one leg moving from side to side](/graphics/leg_easing.gif)
+
 Do keep in mind that this is the first version of ARA and that it is a work in progress😊
 
 I will try to make everything for the project available, so you can start your own project❤️
